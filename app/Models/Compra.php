@@ -13,7 +13,7 @@ class Compra extends Model
         'total',
     ];
 
-    // Relación inversa: Una compra pertenece a un usuario
+    // Una compra pertenece a un usuario
     public function user()
     {
         return $this->belongsTo(User::class, 'usuario_ID', 'id');

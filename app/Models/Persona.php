@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Persona extends Model
 {
-    // Campos que puedes llenar masivamente (según migración)
+    // Campos que puedes llenar masivamente 
     protected $fillable = [
         'usuario_ID',
         'nombre_persona',
@@ -16,7 +16,7 @@ class Persona extends Model
         'imagenPerfil_url',
     ];
 
-    // Relación inversa: cada persona pertenece a un usuario
+    // Cada persona pertenece a un usuario
     public function user()
     {
         return $this->belongsTo(User::class, 'usuario_ID', 'id');

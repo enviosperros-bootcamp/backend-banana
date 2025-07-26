@@ -23,7 +23,7 @@ class User extends Authenticatable
         'remember_token',
     ];
 
-    //Hashea
+    //Hashea -
     protected $casts = [
         'email_verified_at' => 'datetime',
         'password' => 'hashed',

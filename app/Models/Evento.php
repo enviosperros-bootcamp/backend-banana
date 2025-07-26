@@ -15,7 +15,7 @@ class Evento extends Model
         'fecha',
     ];
 
-    // Relación inversa: Un evento pertenece a un usuario
+    // Un evento pertenece a un usuario
     public function user()
     {
         return $this->belongsTo(User::class, 'usuario_ID', 'id');
